@@ -1,0 +1,16 @@
+.panel {
+	margin: 1%;
+	margin-top: 2%;
+	padding: 0;
+	width: 30%;
+}
+#infoTable {
+	width: 85%;
+	margin: 0 auto;
+}
+.close{
+	margin: 3%;
+}
+#weatherForm {
+	text-align: center;
+}

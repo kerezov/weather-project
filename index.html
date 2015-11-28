@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather Page</title>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="resources/css/jquery.toast.min.css" />
+		<link rel="stylesheet" href="resources/css/bootstrap-cerulean-theme.css" />
+		<link rel="stylesheet" href="resources/css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="resources/js/customScript.js"></script>
+		<script src="resources/js/jquery.toast.min.js"></script>
+	</head>
+	<body>
+		<div class='container'>
+			<div class="jumbotron">
+				<h1>Weather information</h1>
+			</div>
+			<div id="weatherForm" class="form-inline">
+				<div class="form-group">
+					<input id='cityName' type="text" class='form-control' placeholder='City'></input>
+				</div>
+				<div class="form-group">
+					<select id='parameterSelectionList' class='form-control'>
+						<option id="defaultMetricSelection" value='1' selected disabled>Choose metrics</option>
+						<option id="wtc" value='2'>Wind Degree, Temperature(K), Cloudiness(%)</option>
+						<option id="wha" value='3'>Wind Speed, Humidity(%), Atmos. pressure</option>
+						<option id="tmm" value='4'>Temperature(K), Minimum Temperature(K), Maximum Temperature(K)</option>
+						<option id="asc" value='5'>Atmos. pressure (sea), Atmos. pressure (ground), Cloudiness(%)</option>
+						<option id="llr" value='6'>Latitude, Longitude, Rain (past 3h)</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select id='weatherDataType' class='form-control'>
+						<option id="currentWeather" value='weather'>Current Weather</option>
+						<option id="forecastWeather" value='forecast'>Forecast Weather</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input id="getDataButton" type="button" class='btn btn-info' value="Get information"></input>
+				</div>
+			</div>
+			<div id="infoTable">
+			</div>
+		</div>
+	</body>
+</html>
