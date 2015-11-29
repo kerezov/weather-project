@@ -35,7 +35,7 @@
 					}
 
 					generateInfoBox(result, selectedParams, apiCallType);
-					showSuccess('Sucessfuly gathered information.');
+					showSuccess('Successfully gathered information.');
 				},
 				error: function (xhr, ajaxOptions, thrownError) {
 					showError(thrownError);
@@ -160,6 +160,8 @@
 								'Longitude: ' + data.coord.lon + '<br/>' +
 								'Rain volume (past 3h): ' + rain + '<br/>';
 				break;
+			default:
+				returnString = '';
 		}
 		
 		return returnString;
